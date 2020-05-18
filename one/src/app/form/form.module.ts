@@ -4,16 +4,14 @@ import { OuterComponent } from './outer/outer.component';
 import { InnerComponent } from './inner/inner.component';
 import { RouterModule , Routes } from '@angular/router';
 import { FormComponent } from './form.component';
-
 const routes: Routes = [
   {
     path: '' , component: FormComponent
   }
-
 ]
 
 @NgModule({
-  declarations: [OuterComponent, InnerComponent],
+  declarations: [OuterComponent, InnerComponent , FormComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
